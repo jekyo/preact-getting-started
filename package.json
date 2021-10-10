@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "preact build",
-    "serve": "sirv build --port $PORT --cors --single",
+    "serve": "sirv build --port $PORT --$HOST --cors --single",
+    "start": "npm run build && npm run serve"
     "dev": "preact watch",
     "lint": "eslint src",
     "test": "jest"
